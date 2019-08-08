@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LOGIN</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="inner">
+      <div class="flex-container">
+        <div class="items left_item">
+          <div class="form_inner">
+            <h2 class="lohin_title">Log In</h2>
+            <form action="">
+              <input type="text" placeholder="Email" class="login_input">
+              <input type="password" placeholder="Password" class="login_input">
+              <label class="container">
+                <input type="checkbox" checked="checked">
+                forget password
+              </label>
+              <buttom class="btn_1">LOGIN</buttom>
+            </form>
+          </div>
+          <div class="opacity">
+            <h1>SIGN UP</h1>
+            <form action="" style="margin-top: 40px;">
+              <input type="text" placeholder="First Name" class="signup_input">
+              <input type="text" placeholder="Last Name" class="signup_input">
+              <input type="text" placeholder="Email" class="signup_input">
+              <input type="password" placeholder="Password" class="signup_input">
+              <input type="number" placeholder="Phone Number" class="signup_input">
+              <buttom class="custom_btn">Submit</buttom>
+            </form>
+          </div>
+        </div>
+        <div class="items right_item">
+          <div class="right_side_text">
+            <h2>Join for Free</h2>
+            <h2>Click here to new sign up</h2>
+            <buttom class="btn_2">sign up</buttom>
+          </div>
+          <div class="log_in">
+            <div class="center">
+              <h2>For Login Click Here</h2>
+              <buttom class="custom_btn log_slide">Login</buttom>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.btn_2').click(function(){
+      $('.left_item').addClass('right').removeClass('left')/*.children('.form_inner').css("display" , "none")*/;
+      $('.left_item').children('.form_inner').addClass('display_none');
+
+      $('.right_item').addClass('left').removeClass('right')/*.children('.right_side_text').css("display" , "none")*/;
+      $('.right_item').children('.right_side_text').addClass('display_none');
+    });
+
+    $('.log_slide').click(function(){
+      $('.left_item').removeClass('right').addClass('left')/*.children('.form_inner').css("display" , "block")*/;
+      $('.left_item').children('.form_inner').removeClass('display_none').addClass('display_block');
+
+      $('.right_item').removeClass('left').addClass('right')/*.children('.right_side_text').css("display" , "block")*/;
+      $('.right_item').children('.right_side_text').removeClass('display_none').addClass('display_block');
+    });
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
