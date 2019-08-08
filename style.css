@@ -8,7 +8,8 @@
   width: 100%;
   /*height: 100vh;*/
   /*background-image: linear-gradient(to right top, #27cfbc, #00d8a9, #00de8a, #00e35f, #4de60e);*/
-  background-image: linear-gradient(to right top, #2c2c2c, #ffffff, #88e3c1, #d9ebe5, #b2f2ff);
+  /*background-image: linear-gradient(to right top, #2c2c2c, #ffffff, #88e3c1, #d9ebe5, #b2f2ff);*/
+  background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +27,7 @@
   /*display: flex;
   flex-direction: row;*/
   position: relative;
-  height: 637px;
+  height: 635px;
   background: #34ffcc;
   /*margin: 15px;*/
   /*background-image: linear-gradient(to right top, #2d6dce, #009bf0, #00c1d3, #00dc85, #a8eb12);*/
@@ -178,7 +179,7 @@ input[type="checkbox"] {
   outline: none;
 }
 .right_side_text{
-  padding-top: 275px;
+  padding-top: 232px;
   height: 100%;
   position: relative;
   z-index: 1;
@@ -254,4 +255,68 @@ input[type="checkbox"] {
 }
 .log_in h2{
   color: #53d9a6;
+}
+.frm{
+  margin-top: 40px;
+}
+
+/*for ipad and ipad pro view*/
+@media screen and (min-width: 768px) and (max-width: 993px){
+  .opacity{
+    padding: 40px 40px;
+  }
+  .form_inner{
+    padding: 100px 30px;
+  }
+}
+@media screen and (max-width: 767px){
+  .inner{
+    padding: 0px;
+    background: none;
+  }
+  .form_inner{
+    padding: 90px 10px;
+  }
+  .login_input{
+    height: 32px;
+    padding: 0 10px;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  .btn_1, .btn_2, .custom_btn{
+    width: 100px;
+    line-height: 25px;
+    height: 28px;
+    font-size: 14px;
+  }
+  .custom_btn{
+    margin-top: 10px;
+  }
+  .right_side_text{
+    padding-top: 256px;
+  }
+  .right_side_text h2{
+    font-size: 18px;
+  }
+  .opacity{
+    padding: 20px 10px;
+  }
+  .signup_input{
+    height: 30px;
+    padding: 0 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+  .opacity h1{
+    font-size: 24px;
+  }
+  .frm{
+    margin-top: 12px;
+  }
+  .log_in h2{
+    font-size: 18px;
+  }
+  .center{
+    margin-top: 20px;
+  }
 }
